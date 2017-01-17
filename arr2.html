@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var arr=[];
+	var rounds=29;
+	var len=0;
+	var max_length=0;
+	for (var i = 0; i <= rounds; i++) {
+		arr.push(Math.round((Math.random()*2)-1));
+	}
+	alert(arr);
+
+	for (var i = 0; i < arr.length; i++) {
+		
+		if (arr[i]==1) {
+			len = 0;
+			while (i<arr.length && arr[i] ==1) {
+				i++;
+				len = len + 1;
+			}
+			
+			if (len>max_length) {
+				max_length=len;
+			}
+		}
+
+	}
+	alert('Maximalno dlinnaya posledovatelnost edinic: '+max_length);
+</script>

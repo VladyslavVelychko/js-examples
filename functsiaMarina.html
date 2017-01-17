@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random()*(max-min+1))+min;
+	}
+
+	function getCard() {
+		var cards=['6','7','8','9','10','J','Q','K','A'];
+		return cards[getRandomInt(0,cards.length-1)];
+	}
+
+	function getSum(arr) {
+		for (var i = 0; i < arr.length; i++) {
+			var cards2=['6','7','8','9','10','10','10','10','10'];
+			var sum=parseInt(arr[i])+parseInt(arr[i+1]);
+			return sum;
+		}
+
+		
+	}
+
+	var dealer=[getCard()];
+	var player=[getCard(),getCard()];
+
+	alert('Dealer: '+dealer.join(' ')+'. Player: '+player.join(' '));
+	alert('Tekuschaya summa kart u igroka: '+getSum(player));
+
+</script>

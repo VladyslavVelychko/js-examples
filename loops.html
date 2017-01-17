@@ -1,0 +1,26 @@
+<meta charser="utf-8">
+<script>
+	/*var n = 0;
+	while (n<=9) {
+		alert(n);
+		n=n+1;
+	}*/
+
+	/*do {
+		alert("Skol/'ko budet 2+3?");
+	} while (prompt("Vvedi otvet") !="5");
+	alert("Poka");*/
+
+	var n=0;
+		
+		do {
+			if ((Math.random()*6)<1) {
+				alert('Poka');
+				break;
+			}
+			n++;
+		} while (prompt("Igraem? 1 - yes, smth else - no") == "1")
+			
+		alert("Rounds:"+n)
+
+</script>

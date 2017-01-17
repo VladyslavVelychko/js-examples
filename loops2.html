@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var nachalniy_vklad=parseInt(prompt("Vvedite summu vklada: "));
+	var stavka=parseInt(prompt("Vvedite procentnuyu stavku: "));
+	var srok=parseInt(prompt("Vvedite srok vklada: "));
+	for (var i = 1; i <= srok; i++) {
+		nachalniy_vklad=nachalniy_vklad*((100+stavka)/100)
+		alert("Proshlo let: "+i+". Tekuschiy vklad: "+Math.floor(nachalniy_vklad));
+	}
+</script>

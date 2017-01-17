@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<script>
+	var a = parseInt(prompt('Enter first angle'));
+	var b = parseInt(prompt('Enter second angle'));
+	var result =0;
+	if (a<5 && a>1) {
+		alert('Popal v X');
+		result=result+1;
+		if (b<20 && b>10) {
+			alert('Popal v oba');
+			result=result+1;
+		} else {
+			alert('Popal tolko v X')
+		}
+	} else if (a<20 && a>10) {
+		alert('Popal v Y');
+		result=result+1;
+		if (b<5 && b>1) {
+			alert('Popal v oba');
+			result=result+1;
+		} else {
+			alert('Popal tolko v X');
+		}
+	} else {
+		alert('Poka ne popal');
+		if (b<5 && b>1) {
+			alert('Popal v X');
+			result=result+1;
+		} else if (b<20 && b>10) {
+			alert('Popal v Y');
+			result=result+1;
+		} else {
+			alert('Oba ne popal');
+		}
+	}
+	alert('Tvoi rezultat '+result+' iz dvuh');
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Программа сложения двух чисел</title>
+	</head>
+	<body>
+		<form>
+			<input id="a" type="text" value="1"><br>
+			<input id="b" type="text" value="1"><br>
+			<input type="button" value="Сложить два числа" onclick="addition();"><br>
+		</form>
+		<div id="result"></div>
+	</body>
+</html>
+
+<script type="text/javascript">
+function addition() {
+			var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value);
+ 
+			if (isNaN(a)==true) a=0;
+			if (isNaN(b)==true) b=0;
+ 
+			var c = a + b;
+ 
+			document.getElementById('result').innerHTML = a + " + " + b + " = " + c;
+		}
+/*var a,b,c;
+a=prompt("Input first number:");
+b=prompt("Input second number:");
+var a = parseInt(document.prompt);
+var b = parseInt(document.prompt);
+var c = a+b;
+alert(c);*/
+</script>
